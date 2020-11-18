@@ -82,6 +82,11 @@ a:active {
   transition: 0.2s opacity;
 }
 
+.button:visited {
+  /* visited link */
+  color: #FFFFFF;
+}
+
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
