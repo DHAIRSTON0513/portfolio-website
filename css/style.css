@@ -220,6 +220,88 @@ img {
   /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .logo {
   max-width: 250px;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+  }
+
+  body {
+    font-size: 18px
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  #home-page h3 {
+    margin-top: 0;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 20px
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 22px
+  }
+
+  .col-xl-5 {
+    width: 41.66%;
+  }
+
+  .col-xl-7 {
+    width: 58.33%;
+  }
 }

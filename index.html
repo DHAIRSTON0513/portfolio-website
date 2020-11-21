@@ -12,14 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="home-page">
   <!-- Header -->
   <header>
     <!-- Navigation -->
     <div class="container">
-      <nav>
         <a href="#" class="logo">Danielle Hairston</a>
-      </nav>
     </div>
     <div>
       <nav>
@@ -39,6 +37,7 @@
       <div class="container">
         <h1>Hi, I'm Danielle and I know people.</h1>
         <span>UX/UI Designer and Frontend Developer from Colorado Springs. </span>
+
         <p>I have a background in psychology, medicine, and management but I chose to transition to UX design so I can continue to provide meaningful solutions, but in an environment that allows me to use my creative skills. I am passionate about
           solving
           meaningful problems for users and I am excited to conduct and analyze impactful research, apply my knowledge of complex human behaviors, and design an empathetic and aesthetically pleasing product.</p>
@@ -46,19 +45,18 @@
     </div>
 
     <!-- Project 1 - ScavApp-->
-    <div id="work">
-      <div class="container">
+      <div id="work" class="container">
         <h2>My Work</h2>
         <div class="row">
           <!-- (2) columns -->
-          <div id=scavapps>
+          <div id=scavapp class="col-md-6 col-lg-7">
             <!-- first column (image) -->
             <picture>
               <source srcset="img/home/mockup-3-screens-sm.jpg" media="(max-width:767px)">
               <img src="img/home/mockup-3-screens-lg.jpg" alt="ScavApp">
             </picture>
           </div><!-- end first column -->
-          <div>
+          <div class="col-md-6 col-lg-5">
             <!-- second column (text) -->
             <h3>ScavApp</h3>
             <p>ScavApp is a scavenger hunt app meant to connect friends with their surroundings. Users can select from our pre-made scavenger hunts, create their own hunts, and, when the time comes, play their chosen scavenger hunt.</p>
@@ -69,14 +67,14 @@
         <!-- Project 2 - TESTACKLR-->
         <div id=testtacklr>
           <!-- (2) columns -->
-          <div>
+          <div class="col-md-6 col-lg-7"
             <!-- first column (image) -->
             <picture>
               <source srcset="img/home/process-sm.png" media="(max-width:767px)">
               <img src="img/home/process-lg.png" alt="TestTacklr">
             </picture>
           </div><!-- end first column -->
-          <div>
+          <div class="col-md-6 col-lg-5">
             <!-- second column (text) -->
             <h3>TestTacklr</h3>
             <p>TestTacklr is a vocabulary app meant to facilitate the creation of study sets and provide effective study methods.</p>
@@ -84,7 +82,6 @@
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for project -->
       </div>
-    </div>
   </main>
 
   <!-- Footer  -->
