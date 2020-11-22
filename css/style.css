@@ -255,6 +255,10 @@ img {
   animation: 4s color-change infinite alternate linear;
 }
 
+.boat {
+  animation: 4s color-change infinite alternate linear;
+}
+
 /*Transitions*/
 div.borderYtoX a:before, div.borderYtoX a:after {
   position: absolute;
@@ -329,6 +333,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
+    margin-top: 4px;
   }
 
   body {
@@ -376,7 +381,7 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
   body {
-    font-size: 22px
+    font-size: 20px
   }
 
   .col-xl-5 {
