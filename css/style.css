@@ -72,6 +72,17 @@ a:active {
   color: #B2A59F;
 }
 
+.logo:visited {
+  /* visited link */
+  color: #FDDCEF;
+}
+
+.logo:hover,
+.logo:focus {
+  text-decoration: none;
+  /* Underlining when hovering over a link */
+}
+
 nav>ul>li>a:visited {
   /* visited link */
   color: #FDDCEF;
@@ -80,7 +91,7 @@ nav>ul>li>a:visited {
 nav>ul>li>a:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 nav>ul>li>a:active {
@@ -94,6 +105,7 @@ nav>ul>li>a:active {
   background-color: #3D323F;
   color: #FDDCEF;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #FDDCEF;
@@ -211,6 +223,10 @@ img {
   text-align: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .container {
   padding: 0 15px;
 }
@@ -233,6 +249,72 @@ img {
 [class*="col-"] {
   float: left;
   padding: 10px
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+/*Transitions*/
+div.borderYtoX a:before, div.borderYtoX a:after {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 2px;
+  content: '';
+  background: #FFF;
+  transition: all 0.3s;
+}
+
+div.borderYtoX a:before {
+  left: 0px;
+  top: 0px;
+}
+
+div.borderYtoX a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after {
+  opacity: 1;
+  height: 2px;
+  width: 100%;
+}
+
+/*Animations*/
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 /* ==============================
