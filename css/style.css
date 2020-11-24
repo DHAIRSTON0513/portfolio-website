@@ -164,6 +164,13 @@ main {
   padding-top: 102px;
 }
 
+.logo {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
 nav {
   display: inline-block;
   width: 100%;
@@ -251,42 +258,79 @@ img {
   padding: 10px
 }
 
+.boat {
+  animation: 7s boat-move infinite linear;
+}
+
+.cloud {
+  animation: 7s cloud-move infinite linear;
+}
+
+.plane {
+  animation: 7s plane-move infinite linear;
+}
+
+.sailboat {
+  animation: 7s sailboat-move infinite linear;
+}
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
 
-.boat {
-  animation: 4s color-change infinite alternate linear;
-}
-
 /*Transitions*/
-div.borderYtoX a:before, div.borderYtoX a:after {
-  position: absolute;
-  opacity: 0.5;
-  height: 100%;
-  width: 2px;
-  content: '';
-  background: #FFF;
-  transition: all 0.3s;
+/* Border from Y to X  */
+.borderYtoX a:before, .borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
 }
 
-div.borderYtoX a:before {
-  left: 0px;
-  top: 0px;
+.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
 }
 
-div.borderYtoX a:after {
-  right: 0px;
-  bottom: 0px;
+.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
 }
 
-div.borderYtoX a:hover:before, div.borderYtoX a:hover:after {
-  opacity: 1;
-  height: 2px;
-  width: 100%;
+.borderYtoX a:hover:before, .borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
 }
 
 /*Animations*/
+@keyframes boat-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(400px, 50px);
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(600px, 50px);
+  }
+}
+
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -301,13 +345,23 @@ div.borderYtoX a:hover:before, div.borderYtoX a:hover:after {
   }
 }
 
-@keyframes cloud-move {
+@keyframes plane-move {
   from {
     transform: translate(0, 50px);
   }
 
   to {
-    transform: translate(200px, 50px);
+    transform: translate(-2000px, 50px);
+  }
+}
+
+@keyframes sailboat-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(-200px, 50px);
   }
 }
 
@@ -336,12 +390,24 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  main {
+    padding-top: 99px;
+  }
+
   body {
     font-size: 18px
   }
 
+  .col-header-6 {
+    width: 50%
+  }
+
   .col-md-6 {
     width: 50%;
+  }
+
+  .logo {
+    margin-top: 20px
   }
 
   #home-page h3 {
