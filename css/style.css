@@ -168,7 +168,9 @@ main {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
+  line-height: 2.5;
   color: #4a4a4a;
+  max-width: 250px;
 }
 
 nav {
@@ -203,6 +205,10 @@ footer>div>div>ul>li {
 
 img {
   border: 2px solid #3D323F
+}
+
+.wireframe {
+  border: none;
 }
 
 #work .row {
@@ -249,15 +255,6 @@ img {
   display: table;
 }
 
-.logo {
-  max-width: 250px;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px
-}
-
 .boat {
   animation: 7s boat-move infinite linear;
 }
@@ -280,34 +277,40 @@ img {
 
 /*Transitions*/
 /* Border from Y to X  */
-.borderYtoX a:before, .borderYtoX a:after
-{
-    position: absolute;
-    opacity: 0.5;
-    height: 100%;
-    width: 2px;
-    content: '';
-    background: #FFF;
-    transition: all 0.3s;
+div.header a {
+  color: #FFF;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
 }
 
-.borderYtoX a:before
-{
-    left: 0px;
-    top: 0px;
+.borderYtoX a:before, .borderYtoX a:after {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 2px;
+  content: '';
+  background: #FFF;
+  transition: all 0.3s;
 }
 
-.borderYtoX a:after
-{
-    right: 0px;
-    bottom: 0px;
+.borderYtoX a:before {
+  left: 0px;
+  top: 0px;
 }
 
-.borderYtoX a:hover:before, .borderYtoX a:hover:after
-{
-    opacity: 1;
-    height: 2px;
-    width: 100%;
+.borderYtoX a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+.borderYtoX a:hover:before, .borderYtoX a:hover:after {
+  opacity: 1;
+  height: 2px;
+  width: 100%;
 }
 
 /*Animations*/
@@ -387,27 +390,39 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    ;
+  }
+
+  .logo {
+    line-height: 3.6
   }
 
   main {
-    padding-top: 99px;
+    padding-top: 90px;
   }
 
-  body {
-    font-size: 18px
+  .portrait {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px
   }
 
   .col-header-6 {
-    width: 50%
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  .col-4 {
+    width: 33.33%
   }
 
   .col-md-6 {
     width: 50%;
-  }
-
-  .logo {
-    margin-top: 20px
   }
 
   #home-page h3 {
@@ -423,8 +438,8 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  body {
-    font-size: 20px
+  .col-lg-6 {
+    width: 50%;
   }
 
   .col-lg-5 {
@@ -446,8 +461,8 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  body {
-    font-size: 20px
+  .col-xl-6 {
+    width: 50%;
   }
 
   .col-xl-5 {
