@@ -164,6 +164,10 @@ main {
   padding-top: 102px;
 }
 
+footer {
+  clear: both;
+}
+
 .logo {
   padding: 0 15px;
   text-transform: uppercase;
@@ -412,8 +416,13 @@ Medium devices (640px and larger)
     padding: 10px
   }
 
-  .col-header-6 {
-    width: 50%;
+  .col-header-5 {
+    width: 41.66%;
+    padding: 0 10px;
+  }
+
+  .col-header-7 {
+    width: 58.33%;
     padding: 0 10px;
   }
 
