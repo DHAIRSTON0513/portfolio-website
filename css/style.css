@@ -99,6 +99,30 @@ nav>ul>li>a:active {
   color: #B2A59F;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.fas {
+  color: #FDDCEF;
+}
+
+.fa-bars {
+  color: #FDDCEF;
+}
+
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -153,15 +177,14 @@ nav>ul>li>a:active {
 /* Layout styling */
 header {
   background-color: #3D323F;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   width: 100%;
   box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.75);
 }
 
 main {
-  padding-top: 102px;
+  padding-top: 56px;
 }
 
 footer {
@@ -174,21 +197,31 @@ footer {
   font-weight: 700;
   line-height: 2.5;
   color: #4a4a4a;
-  max-width: 250px;
+  max-width: 150px;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+.navtoggle.responsive li {
+  display: block;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -279,44 +312,6 @@ img {
   animation: 4s color-change infinite alternate linear;
 }
 
-/*Transitions*/
-/* Border from Y to X  */
-div.header a {
-  color: #FFF;
-  text-decoration: none;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-.borderYtoX a:before, .borderYtoX a:after {
-  position: absolute;
-  opacity: 0.5;
-  height: 100%;
-  width: 2px;
-  content: '';
-  background: #FFF;
-  transition: all 0.3s;
-}
-
-.borderYtoX a:before {
-  left: 0px;
-  top: 0px;
-}
-
-.borderYtoX a:after {
-  right: 0px;
-  bottom: 0px;
-}
-
-.borderYtoX a:hover:before, .borderYtoX a:hover:after {
-  opacity: 1;
-  height: 2px;
-  width: 100%;
-}
-
 /*Animations*/
 @keyframes boat-move {
   from {
@@ -397,8 +392,25 @@ Medium devices (640px and larger)
     ;
   }
 
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .logo {
-    line-height: 3.6
+    line-height: 3.6;
+    max-width: 150px;
   }
 
   main {
@@ -435,8 +447,7 @@ Medium devices (640px and larger)
   }
 
   .skills {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   #home-page h3 {
@@ -446,44 +457,81 @@ Medium devices (640px and larger)
   #about-page h3 {
     margin-top: 0;
   }
-}
 
-/* ==============================
+  /*Transitions*/
+  /* Border from Y to X  */
+  div.header a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+  }
+
+  .borderYtoX a:before, .borderYtoX a:after {
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+  }
+
+  .borderYtoX a:before {
+    left: 0px;
+    top: 0px;
+  }
+
+  .borderYtoX a:after {
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .borderYtoX a:hover:before, .borderYtoX a:hover:after {
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+  }
+
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-  .col-lg-6 {
-    width: 50%;
+  @media only screen and (min-width: 1024px) {
+    .col-lg-6 {
+      width: 50%;
+    }
+
+    .col-lg-5 {
+      width: 41.66%;
+    }
+
+    .col-lg-7 {
+      width: 58.33%;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
-  .col-lg-5 {
-    width: 41.66%;
-  }
-
-  .col-lg-7 {
-    width: 58.33%;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* ==============================
+  /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-  .col-xl-6 {
-    width: 50%;
-  }
+  @media only screen and (min-width: 1440px) {
+    .col-xl-6 {
+      width: 50%;
+    }
 
-  .col-xl-5 {
-    width: 41.66%;
-  }
+    .col-xl-5 {
+      width: 41.66%;
+    }
 
-  .col-xl-7 {
-    width: 58.33%;
+    .col-xl-7 {
+      width: 58.33%;
+    }
   }
-}

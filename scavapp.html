@@ -3,30 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <title>ScavApp</title>
+  <title>Danielle Hairston UX/UI Designer Colorado Springs</title>
   <link href="img/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="home-page">
   <!-- Header -->
   <header>
-    <div>
-      <!-- Navigation -->
-      <div class="header col-header-5">
-        <a href="index.html" class=" logo">Danielle Hairston</a>
-      </div>
-      <div class="header col-header-7 borderYtoX">
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <!-- Navigation -->
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <div class="col-header-5">
+          <a href="index.html" class=" logo">Danielle Hairston</a>
+        </div>
+        <div class="header col-header-7 borderYtoX">
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -100,14 +104,14 @@
         <!-- 2.Observe -->
         <h2>2. Observe</h2>
         <div class="col-md-6 col-lg-5 col-xl-5">
-        <h3>User Interviews & Surveys</h3>
-        <p>Once the foundation was set, surveys and interviews were conducted in order to further understand the user’s needs and goals. The problem statement was then updated further coincide with the research findings listed below.</p>
+          <h3>User Interviews & Surveys</h3>
+          <p>Once the foundation was set, surveys and interviews were conducted in order to further understand the user’s needs and goals. The problem statement was then updated further coincide with the research findings listed below.</p>
         </div>
         <div class="col-md-6 col-lg-7 col-xl-7">
           <picture>
-          <source srcset="img/projects/scavapp/interview-results-sm.png" media="(max-width:767px)">
-          <img src="img/projects/scavapp/interview-results-lg.png" alt="Interview Results">
-        </picture>
+            <source srcset="img/projects/scavapp/interview-results-sm.png" media="(max-width:767px)">
+            <img src="img/projects/scavapp/interview-results-lg.png" alt="Interview Results">
+          </picture>
         </div>
         <div class="col-4">
           <picture>
@@ -394,7 +398,10 @@
     </div>
   </footer>
 
+  <script src="https://kit.fontawesome.com/0e40fa61de.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
+
 
 </body>
 
