@@ -170,6 +170,10 @@ nav>ul>li>a:active {
   color: #FDDCEF;
 }
 
+.cv {
+  margin: 35px;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -293,7 +297,6 @@ img {
   clear: both;
   display: table;
 }
-
 
 .boat {
   animation: 7s boat-move infinite linear;
@@ -449,8 +452,18 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
+  .col-md-rs-6 {
+    width: 50%;
+  }
+
   .skills {
     margin: 0 auto;
+  }
+
+  .skills-container {
+    max-width: 450px;
+    margin: auto;
+    align: center;
   }
 
   #home-page h3 {
@@ -530,8 +543,10 @@ X-large devices (1440px or larger)
       width: 50%;
     }
 
-    .col-xl-5 {
+    .xl-5 {
       width: 41.66%;
+      float: left;
+      padding: 10px;
     }
 
     .col-xl-7 {
