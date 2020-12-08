@@ -261,6 +261,8 @@ img {
 }
 
 #hero {
+  position: relative;
+  z-index: -1;
   text-align: center;
 }
 
@@ -291,6 +293,7 @@ img {
   clear: both;
   display: table;
 }
+
 
 .boat {
   animation: 7s boat-move infinite linear;
