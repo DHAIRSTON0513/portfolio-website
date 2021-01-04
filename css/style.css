@@ -45,6 +45,10 @@ h4 {
   font-weight: 400;
 }
 
+p {
+  font-family: lato
+}
+
 img {
   width: 100%;
 }
@@ -252,6 +256,14 @@ img {
   border: none;
 }
 
+.understand {
+  font-family: lato;
+  list-style-type: circle;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
@@ -270,7 +282,7 @@ img {
   text-align: center;
 }
 
-#scavapp .row {
+#scavapp-home .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
@@ -298,90 +310,7 @@ img {
   display: table;
 }
 
-.boat {
-  animation: 7s boat-move infinite linear;
-}
 
-.cloud {
-  animation: 7s cloud-move infinite linear;
-}
-
-.plane {
-  animation: 7s plane-move infinite linear;
-}
-
-.sailboat {
-  animation: 7s sailboat-move infinite linear;
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-/*Animations*/
-@keyframes boat-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(400px, 50px);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(600px, 50px);
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes plane-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(-2000px, 50px);
-  }
-}
-
-@keyframes sailboat-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(-200px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -486,6 +415,16 @@ Medium devices (640px and larger)
     cursor: pointer;
   }
 
+  div.test a {
+    color: #FFF;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+  }
+
   .borderYtoX a:before, .borderYtoX a:after {
     position: absolute;
     opacity: 0.5;
@@ -533,6 +472,48 @@ Large devices (1024px or larger)
       margin-left: auto;
       margin-right: auto;
     }
+  }
+
+  #testtacklr p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+  }
+
+  #testtacklr h3 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #testtacklr img {
+    display: block;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+
+  #scavapp p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+  }
+
+  #scavapp h3 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #scavapp img {
+    display: block;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+
+  #contact p{
+    text-align: center;
   }
 
   /* ==============================
