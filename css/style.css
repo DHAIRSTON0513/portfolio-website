@@ -252,6 +252,21 @@ img {
   border: 2px solid #3D323F
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  text-align: center;
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .wireframe {
   border: none;
 }
@@ -309,8 +324,6 @@ img {
   clear: both;
   display: table;
 }
-
-
 
 /* ==============================
 Medium devices (640px and larger)
@@ -393,6 +406,20 @@ Medium devices (640px and larger)
     max-width: 450px;
     margin: auto;
     align: center;
+  }
+
+  .card {
+    flex-direction: row;
+    max-width: 900px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .work-main {
+    text-align: left;
+    margin-left: 2em;
+    width: 70%;
   }
 
   #home-page h3 {
@@ -512,7 +539,7 @@ Large devices (1024px or larger)
     margin: 20px auto;
   }
 
-  #contact p{
+  #contact p {
     text-align: center;
   }
 
@@ -533,4 +560,3 @@ X-large devices (1440px or larger)
     .col-xl-7 {
       width: 58.33%;
     }
-  }
