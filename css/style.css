@@ -46,7 +46,7 @@ h4 {
 }
 
 p {
-  font-family: lato
+  font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -222,10 +222,6 @@ footer {
   padding: 0 0 10px;
 }
 
-.navtoggle.responsive li {
-  display: block;
-}
-
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -249,11 +245,18 @@ footer>div>div>ul>li {
 }
 
 img {
-  border: 2px solid #3D323F
+  border: 2px solid #3D323F;
 }
 
-.competitor-analysis {max-width: 550px;
-margin: auto;}
+.statement {
+  max-width: 550px;
+  margin: auto;
+}
+
+.competitor-analysis {
+  max-width: 550px;
+  margin: auto;
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -267,7 +270,7 @@ margin: auto;}
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .no-border {
@@ -275,7 +278,7 @@ margin: auto;}
 }
 
 .understand {
-  font-family: lato;
+  font-family: 'Lato', sans-serif;
   list-style-type: circle;
   max-width: 550px;
   margin-left: auto;
@@ -334,13 +337,12 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 20px 0 13px 0;
   }
 
   nav {
     width: auto;
     float: right;
-    ;
   }
 
   nav>ul>li {
@@ -376,7 +378,7 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 10px
+    padding: 10px;
   }
 
   .col-header-5 {
@@ -390,7 +392,7 @@ Medium devices (640px and larger)
   }
 
   .col-4 {
-    width: 33.33%
+    width: 33.33%;
   }
 
   .col-md-6 {
@@ -408,7 +410,6 @@ Medium devices (640px and larger)
   .skills-container {
     max-width: 450px;
     margin: auto;
-    align: center;
   }
 
   .card {
@@ -480,28 +481,28 @@ Medium devices (640px and larger)
     height: 2px;
     width: 100%;
   }
+}
 
-  /* ==============================
+/* ==============================
 Large devices (1024px or larger)
 ================================= */
-  @media only screen and (min-width: 1024px) {
-    .col-lg-6 {
-      width: 50%;
-    }
+@media only screen and (min-width: 1024px) {
+  .col-lg-6 {
+    width: 50%;
+  }
 
-    .col-lg-5 {
-      width: 41.66%;
-    }
+  .col-lg-5 {
+    width: 41.66%;
+  }
 
-    .col-lg-7 {
-      width: 58.33%;
-    }
+  .col-lg-7 {
+    width: 58.33%;
+  }
 
-    .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #testtacklr p {
@@ -523,6 +524,12 @@ Large devices (1024px or larger)
     margin: 20px auto;
   }
 
+  #scavapp img {
+    display: block;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+
   #scavapp p {
     max-width: 700px;
     margin-left: auto;
@@ -536,30 +543,26 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-  #scavapp img {
-    display: block;
-    max-width: 900px;
-    margin: 20px auto;
-  }
-
   #contact p {
     text-align: center;
   }
+}
 
-  /* ==============================
+/* ==============================
 X-large devices (1440px or larger)
 ================================= */
-  @media only screen and (min-width: 1440px) {
-    .col-xl-6 {
-      width: 50%;
-    }
+@media only screen and (min-width: 1440px) {
+  .col-xl-6 {
+    width: 50%;
+  }
 
-    .xl-5 {
-      width: 41.66%;
-      float: left;
-      padding: 10px;
-    }
+  .xl-5 {
+    width: 41.66%;
+    float: left;
+    padding: 10px;
+  }
 
-    .col-xl-7 {
-      width: 58.33%;
-    }
+  .col-xl-7 {
+    width: 58.33%;
+  }
+}
