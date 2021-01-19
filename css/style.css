@@ -1,7 +1,7 @@
 /*
 Colors used:
-Primary Color (Peacock): #052C30; (Dark Purple) #3D323F
-Secondary Color (Caribbean): #21666E; (Light Pink)#FDDCEF
+Primary Color Teal: #243342
+Secondary Color Magenta: #D10F5D
 Tertiary Color (Space Blue): #123454; #847072
 Quaternary (Pebble): #9795A3
 */
@@ -16,7 +16,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #3D323F;
+  color: #243342;
 }
 
 h1, h2, h3, h4 {
@@ -51,6 +51,7 @@ p {
 
 img {
   width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -148,7 +149,7 @@ nav>ul>li>a:active {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #243342;
-  color: white;
+  color: #D10F5D;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
@@ -410,90 +411,6 @@ img {
   display: table;
 }
 
-.boat {
-  animation: 7s boat-move infinite linear;
-}
-
-.cloud {
-  animation: 7s cloud-move infinite linear;
-}
-
-.plane {
-  animation: 7s plane-move infinite linear;
-}
-
-.sailboat {
-  animation: 7s sailboat-move infinite linear;
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-/*Animations*/
-@keyframes boat-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(400px, 50px);
-  }
-}
-
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(600px, 50px);
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes plane-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(-2000px, 50px);
-  }
-}
-
-@keyframes sailboat-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(-200px, 50px);
-  }
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
-}
 
 /* ==============================
 Medium devices (640px and larger)
