@@ -4,14 +4,19 @@
 <head>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5QXS01DCPB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QXS01DCPB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-5QXS01DCPB', {'anonymize_ip': true});
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5QXS01DCPB', {
+      'anonymize_ip': true
+    });
+  </script>
 
   <meta charset="utf-8">
   <title>Danielle Hairston UX/UI Designer Colorado Springs</title>
@@ -35,7 +40,7 @@
         <div class="header col-header-7 borderYtoX">
           <nav>
             <ul>
-              <li><a href="index.html">Work</a></li>
+              <li><a id="current" href="work.html">Work</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -47,25 +52,73 @@
   </header>
 
   <main>
-    <div id="scavapp" class="container">
-      <div>
-        <h1>ScavApp</h1>
-      </div>
-
+    <div id="project-hero" class="scavapp-hero-image">
+    </div>
+    <div id="projects" class="container">
       <div>
         <div>
-          <h2>Project Summary</h2>
-          <p>ScavApp is an application meant to connect friends with their surroundings. This application can help connect people to a new city, bring friends together, provide a fun way to exercise, and much more.
-
-            This application provides users with the option of choosing from pre-made scavenger hunts or creating their own scavenger hunt. Users can search for pre-made scavenger hunts in all 50 states that are ready to play whenever they want. Or,
-            if
-            they are looking for a more personalized experience, they can take part in our guided process that facilitates the process of creating a scavenger hunt.
-          </p>
+          <h1>Project Summary</h1>
+        </div>
+        <div>
+          <h3> Overview</h3>
+          <p>ScavApp is an application meant to connect people with their friends and surroundings through scavenger hunts. Users can search for pre-made scavenger hunts that are ready to play at any time. Or, if they are looking for a more
+            personalized experience, they can take part in our guided process that facilitates creating a scavenger hunt. Once a game is chosen, customized and scheduled, the players can also use this application when it is time to play. </p>
+        </div>
+        <div>
+          <h3>Purpose and Context</h3>
+          <p>ScavApp was a personal project I completed as part of my UX Immersion Course through CareerFoundry.</p>
+        </div>
+        <div>
+          <h3>Objective</h3>
+          <p>The objective of this project was to learn the detailed step by step process of designing an app completely from scratch. By the end, I had a prototype and full case study for my portfolio that demonstrated the skills and knowledge I
+            learned throughout the course.</p>
+        </div>
+        <div>
+          <div>
+            <div>
+              <h3>Duration</h3>
+              <p>Though this project was self-paced, we were expected to complete the course within 7 months. I was able to complete it in 4.5 months. </p>
+            </div>
+            <div>
+              <h3>Role</h3>
+              <p>UX/UI Designer
+              </p>
+            </div>
+            <div>
+              <h3>Tools</h3>
+              <ul>
+                <li>Balsamiq</li>
+                <li>AdobeXD</li>
+                <li>Keynote</li>
+                <li>Optimal Sort</li>
+                <li>QuickTime player</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3>Skills & Methods</h3>
+            <ul>
+              <li>Competitor Analysis</li>
+              <li>S.W.O.T Profiles</li>
+              <li>User Interviews</li>
+              <li>User Surveys</li>
+              <li>Affinity Mapping</li>
+              <li>User Personas</li>
+              <li>User Journeys</li>
+              <li>User Flows</li>
+              <li>Card Sorting</li>
+              <li>Sitemapping</li>
+              <li>Wireframes</li>
+              <li>Prototypes</li>
+              <li>Usability Testing</li>
+              <li>Rainbow Mapping</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div>
-        <h2>Design Process</h2>
+        <h1>Design Process</h1>
         <picture>
           <source srcset="img/projects/scavapp/design-process-sm.png" media="(max-width:767px)">
           <img src="img/projects/scavapp/design-process-lg.png" alt="Design Process">
@@ -76,8 +129,8 @@
         <!-- 1.Understand -->
         <h2>1. Understand</h2>
         <h3>Competitor Analysis & S.W.O.T Profile</h3>
-        <p>Before creating my product, I needed to first research and understand the problem I was going to address. In order to determine this, I conducted a competitor analysis of GooseChase and Let’s Roam, the two leading scavenger hunt
-          applications available, and summarized in their information into individual S.W.O.T profiles.</p>
+        <p>Before designing my product, I needed to first research and understand the problem I was going to address. In order to determine this, I conducted a competitor analysis of GooseChase and Let’s Roam, the two leading scavenger hunt
+          applications available, and summarized in their information into individual S.W.O.T profiles. This helped me to evaluate their strengths, weaknesses, areas of improvement, and potential threats.</p>
         <div>
           <picture>
             <source srcset="img/projects/scavapp/lets-roam-swot-sm.png" media="(max-width:767px)">
@@ -91,49 +144,50 @@
           </picture>
         </div>
         <p>From this I developed a problem statement which, in turn, helped me to create a possible solution.</p>
-<div class="statement">
-        <div>
-          <picture>
-            <source srcset="img/projects/scavapp/problem-statement-sm.png" media="(max-width:767px)">
-            <img src="img/projects/scavapp/problem-statement-lg.png" alt="Problem Statement">
-          </picture>
-        </div>
-        <div>
-          <picture>
-            <source srcset="img/projects/scavapp/solution-sm.png" media="(max-width:767px)">
-            <img src="img/projects/scavapp/solution-lg.png" alt="Solution">
-          </picture>
+        <div class="statement">
+          <div>
+            <picture>
+              <source srcset="img/projects/scavapp/problem-statement-sm.png" media="(max-width:767px)">
+              <img src="img/projects/scavapp/problem-statement-lg.png" alt="Problem Statement">
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source srcset="img/projects/scavapp/solution-sm.png" media="(max-width:767px)">
+              <img src="img/projects/scavapp/solution-lg.png" alt="Solution">
+            </picture>
+          </div>
         </div>
       </div>
-    </div>
 
       <div>
         <!-- 2.Observe -->
         <h2>2. Observe</h2>
         <div>
           <h3>User Interviews & Surveys</h3>
-          <p>Once the foundation was set, surveys and interviews were conducted in order to further understand the user’s needs and goals. The problem statement was then updated further coincide with the research findings listed below.</p>
+          <p>Once I had insight on my competitors, surveys and interviews were conducted in order to further understand users’s needs and goals. I interviewed people who matched my target audience demographics to find out if they have ever used an
+            app like this, what their experience was like with those apps, areas of improvement, what they would like to get out of an app like this, etc. The research findings were summarized in the list below.</p>
         </div>
         <div class="understand">
           <ul>
-          <li>People like team scavenger hunts more over individual scavenger hunts.</li>
-          <li> People seem to want to keep the hunt amongst their friend group. This is not really seen as a way to meet new people.</li>
-          <li>Creating a scavenger hunt would be a lot of work. It would be night to have an app that would provide the ground work.</li>
-          <li>People are motivated through incentives.</li>
-          <li>There needs to be a good balance in the difficulty level of the scavenger hunt.</li>
-        </ul>
-      </div>
+            <li>People like team scavenger hunts more over individual scavenger hunts.</li>
+            <li> People seem to want to keep the hunt amongst their friend group. This is not really seen as a way to meet new people.</li>
+            <li>Creating a scavenger hunt would be a lot of work. It would be nice to have an app that would provide the ground work.</li>
+            <li>People are motivated through incentives.</li>
+            <li>There needs to be a good balance in the difficulty level of the scavenger hunt.</li>
+          </ul>
+        </div>
+        <div>
+          <p>The problem statement was then updated to further coincide with the research findings listed above.</p>
+        </div>
       </div>
 
       <div>
         <!-- 3. Point of View -->
         <h2>3. Point of View</h2>
         <h3>Affinity Mapping</h3>
-        <p>All of the responses from the user interviews were written down on sticky notes with each color representing a different interview participant. These sticky notes were grouped based on similar themes and titles were assigned to each
-          group
-          to summarize these ideas.
-
-          This affinity mapping helped to understand trends in the thoughts and opinions of the potential user.</p>
+        <p>All of the responses from the user interviews were written down on sticky notes with each color representing a different interview participant. These sticky notes were grouped based on similar themes then titles were assigned to each
+          group to summarize these ideas. This affinity mapping helped me to understand trends in the thoughts and opinions of the potential user.</p>
         <div>
           <picture>
             <source srcset="img/projects/scavapp/affinity-mapping-before-sm.png" media="(max-width:767px)">
@@ -148,7 +202,9 @@
         </div>
         <div>
           <h3>User Personas</h3>
-          <p>User personas were created to bring the above findings to life and to help prioritize these needs. Three different personas were created to acknowledge that people will be using this app for different purposes.</p>
+          <p>User personas were created to connect the findings from the interviews I conducted to actual people who might use the app. I chose to create three different personas to acknowledge that people will be using this app for different
+            purposes. I really wanted to make sure that these personas brought our users to life so I included their demographic information, activities they like to take part in, potential reasons for them using ScavApp, along with areas of
+            motivation and frustrations with using the app. This information helped me to recognize and prioritize their needs as a user.</p>
         </div>
         <div>
           <picture>
@@ -175,9 +231,9 @@
         <h2>4. Ideate</h2>
         <div>
           <h3>User Journeys</h3>
-          <p>From these user personas, I developed user journeys to help visualize the steps the user will need to complete in order to accomplish their goals. By understanding the step by step processes as well as the users thoughts and
-            emotions,
-            designers can truly put themselves in the shoes of the users.</p>
+          <p>From these user personas, I developed user journeys to help understand the steps the user will need to complete in order to accomplish their goals along with the thoughts and emotions they may experience. By understanding the step by
+            step processes as well as the users thoughts and
+            emotions, I could truly put myself in the shoes of the users.</p>
           <div>
             <picture>
               <source srcset="img/projects/scavapp/user-journey-emery-sm.png" media="(max-width:767px)">
@@ -200,7 +256,9 @@
 
         <div>
           <h3>User Flows</h3>
-          <p>Once I understood the goals and needs of the user, user flows were created to demonstrate all of the pages the user would need to work their way through to accomplish their goals. These created the foundation needed to begin
+          <p>Once I understood the goals and needs of the user, I created user flows to demonstrate all of the pages the user would need to work through to accomplish their goals. To make sure I included all of the necessary steps, I established
+            the
+            entry point and the success criteria then filled in the steps from there. These created the foundation needed to begin
             developing
             the information architecture of the application.</p>
           <div>
@@ -225,9 +283,10 @@
 
         <div>
           <h3>Card Sorting & Sitemapping</h3>
-          <p>Card sorting was performed to help understand the user’s point of view of how information should be grouped. This provided the structure for mapping the application. The information gained from the card sorting was used to develop a
-            site
-            map of how things will be grouped and structured in the application.</p>
+          <p>Card sorting was performed get insight from potential users on how information should be grouped within the app. After multiple cards were labelled with different topics relating to the app, potential users were asked to group these
+            cards together in a way that made sense to them. In the photo below, the darker the color and the higher the percentage, the more these themes were grouped together. The information gained from the card sorting was then used to develop
+            a
+            sitemap of how things will be grouped and structured in the application.</p>
           <div>
             <picture>
               <source srcset="img/projects/scavapp/card-sorting-sm.png" media="(max-width:767px)">
@@ -246,28 +305,32 @@
       <div class="row">
         <!-- 5. Prototype-->
         <h2>5. Prototype</h2>
-        <p>Low, mid, and high fidelity wireframes were created using user journeys, user flows, and the sitemap. These wireframes were turned into prototypes to bring an element of interactivity and to bring the wireframes to life.
+        <p>Low, mid, and high fidelity wireframes were created using all of the information that was gathered and created in the previous steps. These wireframes were turned into prototypes to bring an element of interactivity and make it possible
+          to
+          perform user testing.
         </p>
 
         <div>
           <h3>Low-Fidelity</h3>
-          <p>Quick sketches were created to build a foundation of the core functionality of the app.</p>
+          <p>Quick sketches were created to build a foundation of the core functionality of the app. The reason I started with sketckes was to make sure that a solid foundation was set. I did not want to get bogged down and distracted with the
+            appearance of the app. A good foundation can make the difference between an app that only looks good and another app that looks good but is also user friendly.</p>
           <div>
             <picture>
               <source srcset="img/projects/scavapp/low-fidelity-sm.png" media="(max-width:767px)">
-              <img src="img/projects/scavapp/low-fidelity-lg.png" alt="Low-Fidelity Wireframes" class="no-border">
+              <img src="img/projects/scavapp/low-fidelity-lg.png" alt="Low-Fidelity Wireframes" class="no-border no-shadow">
             </picture>
           </div>
         </div>
 
         <div>
           <h3>Mid-Fidelity</h3>
-          <p>Mid-fidelity wireframes were created using the program Balsamiq. These were created to show more functionality than the low-fidelity wireframes but did not have the the level of detail found in the high-fidelity wireframes.</p>
+          <p>Once the overall foundation was set, mid-fidelity wireframes were created using the program Balsamiq. These illustrated more functionality than the low-fidelity wireframes but did not have the the level of detail found in the
+            high-fidelity wireframes.</p>
           <div>
-              <picture>
-                <source srcset="img/projects/scavapp/mid-fidelity-sm.png" media="(max-width:767px)">
-                <img src="img/projects/scavapp/mid-fidelity-lg.png" alt="Mid-Fidelity Wireframes" class="no-border">
-              </picture>
+            <picture>
+              <source srcset="img/projects/scavapp/mid-fidelity-sm.png" media="(max-width:767px)">
+              <img src="img/projects/scavapp/mid-fidelity-lg.png" alt="Mid-Fidelity Wireframes" class="no-border no-shadow">
+            </picture>
           </div>
         </div>
 
@@ -275,10 +338,10 @@
           <h3>High-Fidelity</h3>
           <p>The last stage was to create high-fidelity wireframes using AdobeXD. These incorporated all of the functionality and also included the UI experience. These screens were mapped to create a prototype that was used for user testing.</p>
           <div>
-              <picture>
-                <source srcset="img/projects/scavapp/high-fidelity-sm.png" media="(max-width:767px)">
-                <img src="img/projects/scavapp/high-fidelity-lg.png" alt="High-Fidelity Wireframes" class="no-border">
-              </picture>
+            <picture>
+              <source srcset="img/projects/scavapp/high-fidelity-sm.png" media="(max-width:767px)">
+              <img src="img/projects/scavapp/high-fidelity-lg.png" alt="High-Fidelity Wireframes" class="no-border no-shadow">
+            </picture>
           </div>
         </div>
       </div>
@@ -289,46 +352,56 @@
         <div>
           <div>
             <h3>Usability Testing</h3>
-            <p>Usability testing was performed using the high-fidelity prototype to identify pain points and areas of improvement before handing off the design to the developers. Users were read scenarios then asked to complete tasks using the
-              prototype.</p>
+            <p>Usability testing was performed after the creation of each type of wireframe fidelity. User testing was used to identify pain points and areas of improvement before handing off the design to the developers. It was important to make
+              sure that errors were caught early in the design process because they are easier to fix at that time. For the actual testing, users were read scenarios then asked to complete tasks using the prototypes.</p>
             <h3>Affinity & Rainbow Mapping</h3>
-            <p>The results from the usability tests were grouped together based on similar themes using affinity mapping. These themes were used in rainbow mapping to help illustrate the prominence of the problem and to consider possible solution
-              for
-              these problems. From this spreadsheet, I was able to prioritize which issues to fix.​​​​​​​</p>
+            <p>The results from the high-fidelity usability tests were grouped together based on similar themes using affinity mapping. These themes were used in rainbow mapping to help illustrate the severity of the problem and to document possible
+              solutions for these problems. From this spreadsheet, I was able to prioritize which issues to fix first using Jakob Nielsen's Error Severity Rating Scale. Those issues that were rated a "4" were usability issues that needed to be fixed
+              before
+              development.​​​​​​​</p>
+            <div>
+              <picture>
+                <source srcset="img/projects/scavapp/rainbow-mapping-sm.png" media="(max-width:767px)">
+                <img src="img/projects/scavapp/rainbow-mapping-lg.png" alt="Rainbow Mapping">
+              </picture>
+            </div>
             <h3>Iteration</h3>
-            <p>After analyzing the results from the usability testing, changes were made to the prototype to address these pain points. Though these changes have been made there is always room for further iteration. Future iterations will include
+            <p>After analyzing the results from the usability testing, changes were made to the prototype to address these pain points. Though changes were made there is always room for further iteration and improvement. Future iterations will include
               adding additional game types, providing more support while customizing games, adding animations, creating a mascot, polishing the UI design, and offering additional filter options.​​​​​​</p>
           </div>
-          <div>
-            <picture>
-              <source srcset="img/projects/scavapp/rainbow-mapping-sm.png" media="(max-width:767px)">
-              <img src="img/projects/scavapp/rainbow-mapping-lg.png" alt="Rainbow Mapping">
-            </picture>
-          </div>
+
         </div>
       </div>
 
       <div class="row">
-        <h3>Final Product</h3>
-        <p> Click
-          <a href="https://xd.adobe.com/view/97228b04-7bb1-4ec3-b200-4806edd70e60-c271/?fullscreen">here</a>
-          to view the entire prototype!
+        <h2>Final Product</h2>
+        <p>Please explore the content below to see my final prototype and my product demo. I hope you enjoy!​​​​​​</p>
+
+        <h3>Protoype</h3>
+        <p> This is an interactive protoype embedded within the website. Go ahead! Click away!</p>
+        <center><iframe width="300" height="737" src="https://xd.adobe.com/embed/97228b04-7bb1-4ec3-b200-4806edd70e60-c271/?fullscreen" frameborder="0" allowfullscreen></iframe></center>
+        <p> If you are having trouble with the protoype, please click
+          <a href="https://xd.adobe.com/view/97228b04-7bb1-4ec3-b200-4806edd70e60-c271/?fullscreen" class="link">here</a> and you will be redirected.
         </p>
-        <p> Click
-          <a href="https://www.youtube.com/watch?v=rXnHAJZfOG8">here</a>
-          to view the product demo!
-        </p>
+        <h3>Product Demo</h3>
+        <p>This is a video I created to walk people through the different features of the app. Enjoy!</p>
+        <div class="video">
+          <center><iframe width="560" height="315" src="https://www.youtube.com/embed/rXnHAJZfOG8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </div>
       </div>
-    </div>
+      <div>
+        <h2>THANK YOU FOR READING!</h2>
+      </div>
   </main>
 
   <!-- Footer  -->
   <footer id="contact">
     <div class="container">
       <h2>Get in Touch</h2>
-      <p>I would love to hear from you! Please feel free to contact me at <a href="tel:(719)648-5378">(719)648-5378</a>. Prefer sending an email?</p>
+      <p>I would love to hear from you! Please feel free to contact me at <a href="tel:(719)648-5378" class="link">(719) 648-5378</a>.</p>
+      <p>Prefer sending an email?</p>
       <div>
-        <a href="mailto:hairston.danielle13@gmail.com" class="button contact">Send Email</a>
+        <a href="mailto:hairston.danielle13@gmail.com" class="button contact email">Send Email</a>
       </div>
       <div>
         <!--Social Media Layout and Placeholders-->

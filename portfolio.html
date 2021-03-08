@@ -28,19 +28,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body id="scavapp-body">
+<body id="portfolio">
   <!-- Header -->
   <header>
     <!-- Navigation -->
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
         <div class="col-header-5 test borderYtoX">
-          <a href="index.html" class=" logo">Danielle Hairston</a>
+          <a href="index.html" class="logo">Danielle Hairston</a>
         </div>
         <div class="header col-header-7 borderYtoX">
           <nav>
             <ul>
-              <li><a href="index.html">Work</a></li>
+              <li><a id="current" href="work.html">Work</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -52,16 +52,26 @@
   </header>
 
   <main>
-    <div id="scavapp" class="container">
+    <div id="project-hero" class="portfolio-hero-image">
+    </div>
+    <div id="projects" class="container">
       <div>
-        <h1>Portfolio Case Study</h1>
-      </div>
-
-      <div>
-        <h2>Project Summary</h2>
-        <p>I created this portfolio while completing the Frontend Development Course through Career Foundry in order to showcase my UX/UI and Frontend Development projects. This course taught me how to build a website from scratch over the course
-          of 10 weeks. I learned about HTML, CSS, and a limited amount of JavaScript. The website endured user testing, accessibility assessments, and cross browser testing to ensure it was ready to go live. The programs I used included Atom,
-          GitHub, Adobe XD, Linters, and HostGator.</p>
+        <h1>Project Summary</h1>
+        <h3> Overview</h3>
+        <p>**</p>
+        <h3>Purpose and Context</h3>
+        <p>This portfolio was a personal project I completed as part of my Frontend Development Course through CareerFoundry.</p>
+        <h3>Objective</h3>
+        <p>The objective of this project was to learn the fundamentals of building a website from scratch.</p>
+        <h3>Duration</h3>
+        <p>2 Months</p>
+        <h3>Role</h3>
+        <p>Frontend Developer
+        </p>
+        <h3>Tools, Skills, Methods</h3>
+        <p>
+          Atom, GitHub, Adobe XD, Linters, HostGator
+        </p>
       </div>
 
       <div>
@@ -99,6 +109,10 @@
               website, and how to include proper formatting.
             </p>
             <p>Once the foundational knowledge was set it was time to add the content. This content included elements such as the text, more advanced tags, and links which created a more complete and cohesive experience.</p>
+            <picture>
+              <source srcset="img/projects/portfolio/html-about-sm.png" media="(max-width:767px)">
+              <img src="img/projects/portfolio/html-about-lg.png" alt="About Page HTML">
+            </picture>
           </div>
           <div>
             <h3>CSS</h3>
@@ -108,6 +122,10 @@
             <p>From there, since I started with a mobile first approach, I learned how to incorporate media queries to make my design responsive across difference screen sizes. I chose to accomodate for medium devices (640px to 1023px), large devices
               (1024px to 1439px), and extra large devices (1440 px and above) so my website would be responsive for a variety of devices. By the end of it all, I had a website that contained all of the necessary content, looked good, and was
               responsive.</p>
+            <picture>
+              <source srcset="img/projects/portfolio/v1-lg-sm.png" media="(max-width:767px)">
+              <img src="img/projects/portfolio/v1-lg-lg.png" alt="Large Screens">
+            </picture>
           </div>
           <div>
             <h3>JavaScript</h3>
@@ -136,90 +154,98 @@
             </p>
             <div class="understand">
               <ul>
-                <div>
-                  <li>Adjust links so the user knows what page they are on.</li>
-                  <p>I need to adjust my code to make sure that when a link is clicked on it is changing colors so the user knows that page of the website they are on. I know I have this code already in Atom, but I think there is a possibility that I
-                    have the same colors for both a clicked link and unclicked links. </p>
-                </div>
-                <div>
-                  <li>Adding a new page to showcase my resume.</li>
-                  <p>This one will definitely take some time but there have been some portfolios I have seen that have their resume as it’s own page and I really like that format. I think that the way it is right now does not really make my resume
-                    easily accessible. In order to achieve this I will need to create a whole new page for my website. </p>
-                </div>
-                <div>
-                  <li>Photo Size</li>
-                  <p>I need to go through and make sure that my photos are not cut off of the page. Photos are more effective when you can see the whole thing. I am going to adjust the max width and height of my photos.</p>
-                </div>
-                <div>
-                  <li>Adding Drop Shadows</li>
-                  <p>I think that adding drop shadows could enhance my portfolio by adding another dimension to it. I will need to create a class for the photos that I would like to have a drop shadow and then I will have to figure out the details of
-                    the drop shadow.</p>
-                </div>
-                <div>
-                  <li>Adding Gifs</li>
-                  <p>Though this was not brought up during my usability testing, I would like to add gifs of my prototypes so give the user a little snippet of my work. I will record me going through the prototype then upload the video to
-                    SmartMockups. I will then need to research how to add this video to my portfolio.</p>
-                </div>
+
+                <li>Adjust links so the user knows what page they are on.</li>
+                <p>I need to adjust my code to make sure that when a link is clicked on it is changing colors so the user knows that page of the website they are on. I know I have this code already in Atom, but I think there is a possibility that I
+                  have the same colors for both a clicked link and unclicked links. </p>
+
+                <li>Adding a new page to showcase my resume.</li>
+                <p>This one will definitely take some time but there have been some portfolios I have seen that have their resume as it’s own page and I really like that format. I think that the way it is right now does not really make my resume
+                  easily accessible. In order to achieve this I will need to create a whole new page for my website. </p>
+
+                <li>Photo Size</li>
+                <p>I need to go through and make sure that my photos are not cut off of the page. Photos are more effective when you can see the whole thing. I am going to adjust the max width and height of my photos.</p>
+
+                <li>Adding Drop Shadows</li>
+                <p>I think that adding drop shadows could enhance my portfolio by adding another dimension to it. I will need to create a class for the photos that I would like to have a drop shadow and then I will have to figure out the details of
+                  the drop shadow.</p>
+
+                <li>Adding Gifs</li>
+                <p>Though this was not brought up during my usability testing, I would like to add gifs of my prototypes so give the user a little snippet of my work. I will record me going through the prototype then upload the video to
+                  SmartMockups. I will then need to research how to add this video to my portfolio.</p>
+
               </ul>
             </div>
-              <div>
-                <h3>Code Quality, Accessibility & Cross Browser Testing</h3>
-                <p>With my website almost complete, it was time to make sure that the code quality was up to par. This was done through the utilization of various linters for HTML, CSS, and JavaScript. Once all of the errors were corrected, I tested my website on different browsers and a different screen sizes to ensure that no further edits were needed. Lastly, I wanted to make sure that my website achieved the AA standard for accessibility. This was done by using a color checker, making sure to have attributes for all of my photos, and more.
-                </p>
-              </div>
+            <div>
+              <p>With the help of Jakob Nielsen's Severity Rating, I was able to prioritize interations which ultimately resulted in the website you see today. Like many other projects, this will be a constant work in progress.</p>
             </div>
           </div>
+          <div>
+            <h3>Code Quality, Accessibility & Cross Browser Testing</h3>
+            <p>With my website almost complete, it was time to make sure that the code quality was up to par. This was done through the utilization of various linters for HTML, CSS, and JavaScript. Once all of the errors were corrected, I tested my
+              website on different browsers and a different screen sizes to ensure that no further edits were needed. Lastly, I wanted to make sure that my website achieved the AA standard for accessibility. This was done by using a color checker,
+              making sure to have attributes for all of my photos, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-          <!-- Footer  -->
-          <footer id="contact">
-            <div class="container">
-              <h2>Get in Touch</h2>
-              <p>I would love to hear from you! Please feel free to contact me at <a href="tel:(719)648-5378">(719)648-5378</a>. Prefer sending an email?</p>
-              <div>
-                <a href="mailto:hairston.danielle13@gmail.com" class="button contact">Send Email</a>
-              </div>
-              <div>
-                <!--Social Media Layout and Placeholders-->
-                <ul>
-                  <li><a href="https://www.linkedin.com/in/danielle-hairston513" target="_blank">
-                      <svg height="33px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="33px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="g5891">
-                          <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
-                          <g id="shapes">
-                            <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
-                            <path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0"
-                              style="fill:#fff;fill-rule:nonzero;" />
-                            <path
-                              d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
-                              id="path15" style="fill:#fff;fill-rule:nonzero;" />
-                          </g>
-                        </g>
-                      </svg>
-                    </a></li>
-                  <li><a href="https://www.facebook.com/danielle.hairston.31/" target="_blank">
-                      <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g>
-                          <path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#3B5998" />
-                          <path d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z" fill="#FFFFFF" id="f" />
-                        </g>
-                        <g />
-                        <g />
-                        <g />
-                        <g />
-                        <g />
-                        <g />
-                      </svg>
-                    </a></li>
-                </ul>
-              </div>
-              <p>Copyright Danielle Hairston 2021</p>
-            </div>
-          </footer>
+  <!-- Footer  -->
+  <footer id="contact">
+    <div class="container">
 
-          <script src="https://kit.fontawesome.com/0e40fa61de.js" crossorigin="anonymous"></script>
-          <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-          <script src="js/scripts.js"></script>
+      <h2>Get in Touch</h2>
+      <p>I would love to hear from you! Please feel free to contact me at <a href="tel:(719)648-5378" class="link">(719) 648-5378</a>.</p>
+        <p>Prefer sending an email?</p>
+        <div>
+        <a href="mailto:hairston.danielle13@gmail.com" class="button contact email">Send Email</a>
+      </div>
+      <div>
+        <!--Social Media Layout and Placeholders-->
+        <ul>
+          <li><a href="https://www.linkedin.com/in/danielle-hairston513" target="_blank">
+              <svg height="33px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="33px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="g5891">
+                  <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
+                  <g id="shapes">
+                    <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
+                    <path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0"
+                      style="fill:#fff;fill-rule:nonzero;" />
+                    <path
+                      d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
+                      id="path15" style="fill:#fff;fill-rule:nonzero;" />
+                  </g>
+                </g>
+              </svg>
+            </a></li>
+          <li><a href="https://www.facebook.com/danielle.hairston.31/" target="_blank">
+              <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g>
+                  <path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#3B5998" />
+                  <path d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z" fill="#FFFFFF" id="f" />
+                </g>
+                <g />
+                <g />
+                <g />
+                <g />
+                <g />
+                <g />
+              </svg>
+            </a></li>
+        </ul>
+      </div>
+      <div id="copyright">
+        <p>Copyright Danielle Hairston 2021</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/0e40fa61de.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 

@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color Teal: #243342
-Secondary Color Magenta: #D10F5D
+Secondary Color Magenta: #d10f5d
 Tertiary Color (Space Blue): #123454; #847072
 Quaternary (Pebble): #9795A3
 */
@@ -10,16 +10,15 @@ Quaternary (Pebble): #9795A3
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #fff;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
   color: #243342;
 }
 
-h1, h2, h3, h4 {
+h1 h2 h3 h4 {
   line-height: 1.4;
 }
 
@@ -49,76 +48,74 @@ p {
   font-family: 'Lato', sans-serif;
 }
 
+#projects li {
+  font-family: 'Lato', sans-serif;
+}
+
+.skills-list li {
+  font-family: 'Lato', sans-serif;
+}
+
 img {
   width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 a {
-  color: #F5E2D5;
+  color: #fff;
   text-decoration: none;
-  /* No underlining */
-}
-
-a:visited {
-  /* visited link */
-  color: #FDDCEF;
 }
 
 a:hover,
 a:focus {
   opacity: 0.8;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
   /* selected link */
-  color: #B2A59F;
+  color: #b2a59f;
 }
 
 a:visited {
   /* visited link */
-  color: #FDDCEF;
+  color: #fff;
 }
 
-a:hover,
-a:focus {
+a.link {
+  color: #d10f5d;
+  text-decoration: none;
+}
+
+a.link:hover,
+a.link:focus {
   opacity: 0.8;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
-a:active {
+a.link:active {
   /* selected link */
-  color: #B2A59F;
+  color: #d10f5d;
 }
 
-.logo:visited {
+a.link:visited {
   /* visited link */
-  color: #FDDCEF;
+  color: #d3d3d3;
 }
 
 .logo:hover,
 .logo:focus {
   text-decoration: none;
-  /* Underlining when hovering over a link */
-}
-
-nav>ul>li>a:visited {
-  /* visited link */
-  color: #FDDCEF;
 }
 
 nav>ul>li>a:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 nav>ul>li>a:active {
   /* selected link */
-  color: #B2A59F;
+  color: #b2a59f;
 }
 
 .navtoggle li:not(:last-child) {
@@ -138,58 +135,61 @@ nav>ul>li>a:active {
 }
 
 .fas {
-  color: #FDDCEF;
+  color: #fddcef;
 }
 
 .fa-bars {
-  color: #FDDCEF;
+  color: #fff;
 }
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #243342;
-  color: #D10F5D;
+  color: #fff;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #FDDCEF;
-  /* width of the border, type, color */
+  border-bottom: 2px solid #fddcef;
   transition: 0.2s opacity;
 }
 
 .button:visited {
   /* visited link */
-  color: #FDDCEF;
+  color: #fff;
 }
 
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
 .button:active {
   /* selected link */
-  color: #B2A59F;
+  color: #b2a59f;
 }
 
 .button.contact {
   background-color: white;
   color: #243342;
   text-transform: uppercase;
-  border: 2px solid #3D323F;
+  border: 2px solid #d10f5d;
+  padding-top: 13px;
+  padding-bottom: 10px;
 }
 
 .button.contact:hover {
-  background-color: #3D323F;
-  color: #FDDCEF;
+  background-color: #555;
+  color: #fff;
 }
 
 .button.contact:active {
   /* selected link */
-  color: #FDDCEF;
+  color: #fddcef;
+}
+
+.button.email {
+  border: none;
 }
 
 .cv {
@@ -216,7 +216,11 @@ main {
 
 footer {
   clear: both;
-  background-color: #233342
+  background-color: #233342;
+}
+
+.footer {
+  margin-top: -20px;
 }
 
 .logo {
@@ -229,7 +233,7 @@ footer {
 }
 
 .navtoggle.responsive nav {
-  padding: 24px 0 0;
+  padding: 15px 0 0;
 }
 
 .navtoggle.responsive li {
@@ -252,7 +256,10 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+}
+
+#current {
+  color: #d10f5d;
 }
 
 footer>div>div>ul {
@@ -265,7 +272,12 @@ footer>div>div>ul>li {
 }
 
 img {
-  border: 2px solid #3D323F;
+  border: 2px solid #3d323f;
+}
+
+.video {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .statement {
@@ -298,6 +310,10 @@ img {
   border: none;
 }
 
+.no-shadow {
+  box-shadow: none;
+}
+
 .understand {
   font-family: 'Lato', sans-serif;
   list-style-type: circle;
@@ -307,7 +323,7 @@ img {
 }
 
 #work {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 #work .row {
@@ -316,17 +332,16 @@ img {
 }
 
 #hero {
-  padding-top: 20px;
   display: inline-block;
-  width: 100%;
+  width: 100vw;
   position: relative;
   text-align: center;
-  height: 38em;
+  height: 100vh;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home/cliffs.jpg);
-  height: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/home/cliffs-sm.jpg);
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -337,25 +352,26 @@ img {
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 50%;
-  left: 70%;
-  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 60%;
+  transform: translate(-40%, -50%);
   color: white;
 }
 
 .hero-text p {
-  font-size: 18px;
+  font-size: 1.25em;
+  text-align: center;
 }
 
 .hero-button1 {
   border: solid;
-  border-color: #D10F5D;
+  border-color: #d10f5d;
   outline: 0;
   display: inline-block;
-  padding: 10px 40px;
+  padding: 10px 1.75em;
   margin: 10px;
   color: white;
-  background-color: #D10F5D;
+  background-color: #d10f5d;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
@@ -369,10 +385,10 @@ img {
 
 .hero-button2 {
   border: solid;
-  border-color: #D10F5D;
+  border-color: #d10f5d;
   outline: 2px;
   display: inline-block;
-  padding: 10px 40px;
+  padding: 10px 1.5em;
   margin: 10px;
   color: white;
   text-align: center;
@@ -381,14 +397,50 @@ img {
   cursor: pointer;
 }
 
+#project-hero {
+  display: inline-block;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  height: 55vh;
+}
+
+.scavapp-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/scavapp/scavapp-mockup-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.75);
+}
+
+.testtacklr-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/testtacklr/testtacklr-mockup.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.75);
+}
+
+.portfolio-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/portfolio/portfolio-mockup-sm.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.75);
+}
+
 #scavapp-home .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
 
+picture {
+  max-height: 700px;
+}
+
 #contact {
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
   padding: 20px;
 }
 
@@ -402,7 +454,6 @@ img {
 
 .row {
   margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
 }
 
 .row::after {
@@ -411,15 +462,19 @@ img {
   display: table;
 }
 
+.skills-list {
+  text-align: center;
+  list-style: inside;
+}
+
+.skills-list ul {
+  padding-left: 0;
+}
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 10px 0 10px 0;
-  }
 
   nav {
     width: auto;
@@ -493,6 +548,12 @@ Medium devices (640px and larger)
     margin: auto;
   }
 
+  .skills-list {
+    text-align: left;
+    list-style: none;
+    padding-left: 40px;
+  }
+
   .card {
     flex-direction: row;
     max-width: 900px;
@@ -504,37 +565,108 @@ Medium devices (640px and larger)
   .work-main {
     text-align: left;
     margin-left: 2em;
-    width: 70%;
+    width: 60%;
   }
 
   .work-main2 {
     text-align: right;
     margin-right: 2em;
-    width: 70%
+    width: 60%;
+  }
+
+  .work-sidebar {
+    max-width: 600px;
+  }
+
+  .flexbox-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
   }
 
   #home-page h3 {
     margin-top: 0;
   }
 
-  #hero {
-    height: 35em;
-  }
-
-  #work {
-    padding-top: 70px;
-  }
-
   #about-page h3 {
     margin-top: 0;
   }
 
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  p {
+    text-align: justify;
+  }
+
+  #projects img {
+    display: block;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+
+  #projects p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #projects li {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration-style:
+  }
+
+  #projects h3 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #my-work {
+    max-width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .my-story {
+    max-width: 700px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact p {
+    text-align: center;
+  }
+
+  #home-page header {
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px 0 4px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.75);
+    z-index: 1;
+  }
+
+  #home-page main {
+    padding-top: 0px;
+  }
+
+  header {
+    text-align: unset;
+    padding: 10px 0 10px 0;
+  }
 
   /*Transitions*/
   /* Border from Y to X  */
   div.header a {
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
     margin: 0px 10px;
     padding: 10px 10px;
@@ -544,7 +676,7 @@ Medium devices (640px and larger)
   }
 
   div.test a {
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
     margin: 0px 10px;
     padding: 10px 10px;
@@ -559,7 +691,7 @@ Medium devices (640px and larger)
     height: 100%;
     width: 2px;
     content: '';
-    background: #FFF;
+    background: #fff;
     transition: all 0.3s;
   }
 
@@ -579,7 +711,6 @@ Medium devices (640px and larger)
     width: 100%;
   }
 }
-
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -596,57 +727,24 @@ Large devices (1024px or larger)
     width: 58.33%;
   }
 
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home/cliffs-lg.jpg);
   }
 
-  #testtacklr p {
+  .portfolio-hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/portfolio/portfolio-mockup-lg.jpg);
+  }
+
+  .xl-5 {
+    width: 41.66%;
+    float: left;
+    padding: 10px;
+  }
+
+  .my-story {
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
+    float: left;
   }
-
-  #testtacklr h3 {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #testtacklr img {
-    display: block;
-    max-width: 800px;
-    margin: 20px auto;
-  }
-
-  #scavapp img {
-    display: block;
-    max-width: 800px;
-    margin: 20px auto;
-  }
-
-  #scavapp p {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-  }
-
-  #scavapp h3 {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #contact p {
-    text-align: center;
-  }
-}
-
-#hero {
-  height: 43em;
 }
 
 /* ==============================
@@ -656,18 +754,4 @@ X-large devices (1440px or larger)
   .col-xl-6 {
     width: 50%;
   }
-
-  .xl-5 {
-    width: 41.66%;
-    float: left;
-    padding: 10px;
-  }
-
-  .col-xl-7 {
-    width: 58.33%;
-  }
-}
-
-#work {
-  padding-top: 80px;
 }
