@@ -377,34 +377,36 @@ picture {
 /* 3.1 buttons */
 .button {
   display: inline-block;
-  background-color: #243342;
-  color: #fff;
+  background-color: white;
+  color: #243342;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #fddcef;
+  border: 2px solid #d10f5d;
   transition: 0.2s opacity;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button:visited {
   /* visited link */
-  color: #fff;
+  color: #555;
 }
 
 .button:hover {
-  opacity: 0.8;
-  text-decoration: none;
+  background-color: #555;
+  color: #fff;
 }
 
 .button:active {
   /* selected link */
-  color: #b2a59f;
+  color: #fddcef;
 }
 
 .button.contact {
   background-color: white;
   color: #243342;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   border: 2px solid #d10f5d;
   padding-top: 13px;
