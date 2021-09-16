@@ -49,6 +49,7 @@ Secondary Color Magenta: #d10f5d
   6.3 portfolio
   6.4 about
   6.5 columns
+  6.6 ema
 
 7. xl devices
 */
@@ -333,7 +334,7 @@ picture {
 
 /* 2.4 ema */
 .sum-derm-hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/ema/sum-derm-coat-4-lg.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/ema/sum-derm-coat-5-lg.png);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -583,11 +584,6 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-}
-
-.navbar-fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
 }
 
 /* =============
@@ -955,6 +951,11 @@ a.back-to-top {
     float: left;
     padding: 10px;
   }
+
+  /* 6.6 ema*/
+.sum-derm-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/ema/sum-derm-coat-4-lg.png);
+}
 }
 
   /* ==============================
