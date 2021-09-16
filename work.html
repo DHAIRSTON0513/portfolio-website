@@ -40,7 +40,7 @@
         <div class="header col-header-7 borderYtoX">
           <nav>
             <ul>
-              <li><a id= "current" href="work.html">Work</a></li>
+              <li><a id="current" href="work.html">Work</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
@@ -52,52 +52,71 @@
   </header>
 
   <main>
-      <!-- Project 1 - ScavApp-->
-      <div id="work" class="container">
-        <h1>Case Studies</h1>
-        <div class="card">
+
+    <div id="work" class="container">
+      <h1>Case Studies</h1>
+      <!-- Project 1 - EMA-->
+      <div id=testtacklr-home>
+        <!-- (2) columns -->
+        <div class="card flexbox-container">
           <div class="work-sidebar">
-            <!-- (2) columns -->
-            <div id=scavapp-home>
-              <!-- first column (image) -->
-              <picture>
-                <source srcset="img/work/scavapp-art-sm.png" media="(max-width:767px)">
-                <img src="img/work/scavapp-art-lg.png" alt="ScavApp">
-              </picture>
-            </div>
-          </div><!-- end first column -->
-          <div class="work-main">
-            <div>
-              <!-- second column (text) -->
-              <h3>ScavApp</h3>
-              <p>ScavApp is a scavenger hunt app meant to connect people with their friends and their surroundings. Users can select from our pre-made scavenger hunts, create their own hunts, and, when the time comes, play their scavenger hunt.</p>
-              <div>
-                <a href="scavapp.html" class="button">Read More</a>
-              </div>
-            </div>
-          </div><!-- end second column -->
-        </div><!-- end row that holds (2) columns for project -->
-
-        <!-- Project 2 - TESTACKLR-->
-        <div id=testtacklr-home>
+            <picture>
+              <source srcset="img/projects/ema/sum-derm-coat-sm.png" media="(max-width:767px)">
+              <img src="img/projects/ema/sum-derm-coat-lg.png" alt="Summit Dermatology Logo">
+            </picture>
+          </div>
+          <div class="work-main2">
+            <!-- second column (text) -->
+            <h3>UX Research of EMR Software</h3>
+            <p>This research was conducted to understand the workflows of a dermatology practice and how to customize the new EMR software to coincide with their needs.</p>
+            <a href="EMA.html" class="button center">Read More</a>
+          </div>
+        </div><!-- end second column -->
+      </div><!-- end row that holds (2) columns for project -->
+      <!-- Project 2 - ScavApp-->
+      <div class="card">
+        <div class="work-sidebar">
           <!-- (2) columns -->
-          <div class="card flexbox-container">
-            <div class="work-sidebar">
-              <picture>
-                <source srcset="img/work/testtacklr-sm.png" media="(max-width:767px)">
-                <img src="img/work/testtacklr-lg.png" alt="TestTacklr">
-              </picture>
+          <div id=scavapp-home>
+            <!-- first column (image) -->
+            <picture>
+              <source srcset="img/work/scavapp-art-sm.png" media="(max-width:767px)">
+              <img src="img/work/scavapp-art-lg.png" alt="ScavApp">
+            </picture>
+          </div>
+        </div><!-- end first column -->
+        <div class="work-main">
+          <div>
+            <!-- second column (text) -->
+            <h3>ScavApp</h3>
+            <p>ScavApp is a scavenger hunt app meant to connect people with their friends and their surroundings. Users can select from our pre-made scavenger hunts, create their own hunts, and, when the time comes, play their scavenger hunt.</p>
+            <div>
+              <a href="scavapp.html" class="button center">Read More</a>
             </div>
-            <div class="work-main2">
-              <!-- second column (text) -->
-              <h3>TestTacklr</h3>
-              <p>TestTacklr is a vocabulary app designed to facilitate the creation of different types of flashcards and provide effective study methods for a variety of learning styles.</p>
-              <a href="testtacklr.html" class="button">Read More</a>
-            </div>
-          </div><!-- end second column -->
-        </div><!-- end row that holds (2) columns for project -->
+          </div>
+        </div><!-- end second column -->
+      </div><!-- end row that holds (2) columns for project -->
 
-      <!-- Project 3 - Portfolio Website-->
+      <!-- Project 3 - TESTACKLR-->
+      <div id=testtacklr-home>
+        <!-- (2) columns -->
+        <div class="card flexbox-container">
+          <div class="work-sidebar">
+            <picture>
+              <source srcset="img/work/testtacklr-sm.png" media="(max-width:767px)">
+              <img src="img/work/testtacklr-lg.png" alt="TestTacklr">
+            </picture>
+          </div>
+          <div class="work-main2">
+            <!-- second column (text) -->
+            <h3>TestTacklr</h3>
+            <p>TestTacklr is a vocabulary app designed to facilitate the creation of different types of flashcards and provide effective study methods for a variety of learning styles.</p>
+            <a href="testtacklr.html" class="button center">Read More</a>
+          </div>
+        </div><!-- end second column -->
+      </div><!-- end row that holds (2) columns for project -->
+
+      <!-- Project 4 - Portfolio Website-->
       <div id=portfolio-home>
         <!-- (2) columns -->
         <div class="card">
@@ -112,11 +131,11 @@
             <!-- second column (text) -->
             <h3>Portfolio Website</h3>
             <p>Through my Frontend Development course I learned to build my own website from the ground up in order to showcase my work as a UX/UI Designer and Frontend Developer.</p>
-            <a href="portfolio.html" class="button">Read More</a>
+            <a href="portfolio.html" class="button center">Read More</a>
           </div>
         </div><!-- end second column -->
       </div><!-- end row that holds (2) columns for project -->
-</div>
+    </div>
   </main>
 
   <!-- Footer  -->
@@ -124,14 +143,14 @@
     <div class="container">
       <h2>Get in Touch</h2>
       <p>I would love to hear from you! Please feel free to contact me at <a href="tel:(719)648-5378" class="link">(719) 648-5378</a>.</p>
-        <p>Prefer sending an email?</p>
-          <div>
+      <p>Prefer sending an email?</p>
+      <div>
         <a href="mailto:hairston.danielle13@gmail.com" class="button contact email">Send Email</a>
       </div>
       <div>
         <!--Social Media Layout and Placeholders-->
         <ul>
-          <li><a href="https://www.linkedin.com/in/danielle-hairston513" target="_blank">
+          <li><a href="https://www.linkedin.com/in/danielle-hairston" target="_blank">
               <svg height="33px" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="33px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
                 xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="g5891">
@@ -145,20 +164,6 @@
                       id="path15" style="fill:#fff;fill-rule:nonzero;" />
                   </g>
                 </g>
-              </svg>
-            </a></li>
-          <li><a href="https://www.facebook.com/danielle.hairston.31/" target="_blank">
-              <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g>
-                  <path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#3B5998" />
-                  <path d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z" fill="#FFFFFF" id="f" />
-                </g>
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
-                <g />
               </svg>
             </a></li>
         </ul>

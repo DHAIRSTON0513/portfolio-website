@@ -14,6 +14,13 @@ $(document).on('click', 'a[href^="#"]', function(e) {
   }, 1000, 'linear');
 })
 
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
 
 //Back to Top
 var link = document.getElementById("back-to-top");
