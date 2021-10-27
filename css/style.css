@@ -16,11 +16,12 @@ Secondary Color Magenta: #d10f5d
    2.1 home
    2.2 work
    2.3 all projects
-   2.4 ema
-   2.5 scavapp
-   2.6 testtacklr
-   2.7 portfolio
-   2.8 about
+   2.4 flhf
+   2.5 ema
+   2.6 scavapp
+   2.7 testtacklr
+   2.8 portfolio
+   2.9 about
 
 3. components
   3.1 buttons
@@ -39,9 +40,10 @@ Secondary Color Magenta: #d10f5d
   5.4 home
   5.5 work
   5.6 all projects
-  5.7 about
-  5.8 columns
-  5.9 animations
+  5.7 ema
+  5.8 about
+  5.9 columns
+  5.10 animations
 
 6. large devices
   6.1 home
@@ -332,9 +334,25 @@ picture {
   font-family: 'Lato', sans-serif;
 }
 
-/* 2.4 ema */
-.sum-derm-hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/ema/sum-derm-coat-5-lg.png);
+.project-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 2em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* 2.4 flhf*/
+.flhf-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/flhf/gym-2-lg.png);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -342,7 +360,17 @@ picture {
   box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.75);
 }
 
-/* 2.5 scavapp */
+/* 2.5 ema */
+.sum-derm-hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/ema/sum-derm-coat-6-lg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  object-fit: contain;
+  box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* 2.6 scavapp */
 .scavapp-hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/scavapp/scavapp-lg.jpg);
   background-position: center;
@@ -357,7 +385,7 @@ picture {
   border-bottom: 1px solid #4a4a4a;
 }
 
-/* 2.6 testtacklr */
+/* 2.7 testtacklr */
 .testtacklr-hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/testtacklr/test-sm.jpg);
   background-position: center;
@@ -367,7 +395,7 @@ picture {
   box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.75);
 }
 
-/* 2.7 portfolio */
+/* 2.8 portfolio */
 .portfolio-hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/portfolio/portfolio-mockup-sm.jpg);
   background-position: center;
@@ -377,7 +405,7 @@ picture {
   box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.75);
 }
 
-/* 2.8 about */
+/* 2.9 about */
 .skills-list {
   text-align: center;
   list-style: inside;
@@ -508,6 +536,34 @@ a.link:active {
 a.link:visited {
   /* visited link */
   color: #d3d3d3;
+}
+
+#skills a {
+  color: #243342;
+  text-decoration: none;
+}
+
+#skills a:hover,
+a:focus {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+#skills a:active {
+  /* selected link */
+  color: #d10f5d;
+}
+
+#skills a:visited {
+  /* visited link */
+  color: #d10f5d;
+}
+
+.anchor {
+    display: block;
+    height: 92px;
+    margin-top: -92px;
+    visibility: hidden;
 }
 
 /* 3.4 logo */
@@ -755,7 +811,12 @@ a.back-to-top {
     margin-right: auto;
   }
 
-  /* 5.7 about */
+  /* 5.7 ema */
+  .sum-derm-hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/ema/sum-derm-coat-5-lg.png);
+}
+
+  /* 5.8 about */
   .skills {
     margin: 0 auto;
   }
@@ -788,7 +849,7 @@ a.back-to-top {
     margin-top: 0;
   }
 
-  /* 5.8 columns */
+  /* 5.9 columns */
   [class*="col-"] {
     float: left;
     padding: 10px;
@@ -816,7 +877,7 @@ a.back-to-top {
     width: 50%;
   }
 
-  /* 5.9 animation */
+  /* 5.10 animation */
   /* Border from Y to X  */
   div.header a {
     color: #fff;
@@ -955,6 +1016,14 @@ a.back-to-top {
   /* 6.6 ema*/
 .sum-derm-hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/ema/sum-derm-coat-4-lg.png);
+}
+
+.project-card {
+  flex-direction: row;
+  max-width: 900px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 }
 
