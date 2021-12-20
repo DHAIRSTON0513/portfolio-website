@@ -434,6 +434,36 @@ picture {
   transform: translateY(-110px) rotateX(90deg);
 }
 
+/* ================ Traits ================ */
+#traits-container {
+  background-color: rgba(0, 145, 147, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+.traits-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  padding: 10px;
+  margin-bottom: 70px;
+}
+
+.traits-grid-container p {
+  font-size: .75em;
+  margin: 10px;
+}
+
+.traits-grid-item {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.traits-grid-item i {
+  color: #000;
+  margin-top: 10px;
+}
+
 /* ================ The Timeline ================ */
 .timeline {
   position: relative;
@@ -595,11 +625,13 @@ picture {
 .direction-r .desc {
   margin: 1em 0 0 0.75em;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   padding: 10px;
 }
+
 .grid-item {
   padding: 0px;
   font-size: 30px;
@@ -647,7 +679,7 @@ picture {
 
 /* 2.4 flhf*/
 .flhf-hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/work/flhf-mockup-lg.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/flhf/hero-3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -667,7 +699,7 @@ picture {
 
 /* 2.6 scavapp */
 .scavapp-hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/scavapp/scavapp-lg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/scavapp/ui-design-example-lg.png);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -692,7 +724,7 @@ picture {
 
 /* 2.8 portfolio */
 .portfolio-hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/portfolio/portfolio-mockup-sm.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/portfolio/portfolio-sm.jpg);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -713,7 +745,6 @@ picture {
 .skills-list li {
   font-family: 'Lato', sans-serif;
 }
-
 
 /* =============
    3. components
@@ -1056,6 +1087,12 @@ a.back-to-top {
     padding-top: 0px;
   }
 
+  .traits-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
   .direction-l .desc,
   .direction-r .desc {
     margin: 1em 4em 0 4em;
@@ -1110,7 +1147,7 @@ a.back-to-top {
 
   /* 5.7 flhf */
   .flhf-hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/work/flhf-mockup-3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/flhf/hero-2.jpg);
   }
 
   /* 5.8 ema */
@@ -1369,6 +1406,10 @@ a.back-to-top {
       margin: 40px 150px 100px 150px;
     }
 
+    .traits-grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
     /* 7.2 work */
     .card {
       flex-direction: row;
@@ -1400,7 +1441,7 @@ a.back-to-top {
 
     /* 7.3 portfolio */
     .portfolio-hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/portfolio/portfolio-mockup-lg.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/portfolio/portfolio-lg.jpg);
     }
 
     /* 7.4 about */
@@ -1432,7 +1473,7 @@ a.back-to-top {
 
     /* 7.6 flhf */
     .flhf-hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/work/flhf-mockup-2.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/projects/flhf/hero.jpg);
     }
 
     /* 7.7 ema*/
